@@ -9,7 +9,7 @@ def sub():
     b=int(input("Enter b: "))
     print(a-b)
 def mul():
-    print("Subtraction: ")
+    print("Multiplication: ")
     a=int(input("Enter a: "))
     b=int(input("Enter b: "))
     print(a*b)
