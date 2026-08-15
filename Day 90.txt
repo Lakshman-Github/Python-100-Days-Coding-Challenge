@@ -1,0 +1,11 @@
+def check_num_even_odd(num):
+    if num%2 == 0:
+        return "Even" #alwasy use return inside function 
+    else:
+        return "Odd" #always use return inside function 
+
+num = int(input("Enter a number: "))
+
+result = check_num_even_odd(num)
+
+print("Output:", result)
