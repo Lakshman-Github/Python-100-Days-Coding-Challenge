@@ -1,0 +1,24 @@
+def find_largest(numbers):
+    largest = numbers[0]
+    
+    for num in numbers:
+        if num > largest:
+            largest = num 
+            
+    return largest
+    
+def find_sum(numbers):
+    total = 0
+    
+    for num in numbers:
+        total = total + num 
+        
+    return total
+    
+numbers = [10,25,7,40,15]
+
+largest = find_largest(numbers)
+total = find_sum(numbers)
+
+print("Largest number:",largest)
+print("Sum of numbers:", total)

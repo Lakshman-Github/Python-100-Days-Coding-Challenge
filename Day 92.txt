@@ -1,0 +1,17 @@
+def find_square(num):
+     return num*num 
+     
+def fibanocci(num):
+    store = 1
+    for i in range(1,num+1):
+        store = store * i
+        
+    return store 
+        
+num = int(input("Enter a number: "))
+
+result1 = find_square(num)
+result2 = fibanocci(num)
+
+print(result1)
+print(result2)

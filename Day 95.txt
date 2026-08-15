@@ -1,0 +1,30 @@
+def sum_of_digits(num):
+    store = 0
+    for i in range(num+1):
+        digits = num % 10
+        store = store + digits
+        num = num//10
+        
+    return store
+    
+def check_odd_even(num):
+    
+    store = sum_of_digits(num)
+    
+    if(store%2 == 0):
+        return "Even"
+    else: 
+        return "Odd"
+        
+num = int(input("Enter a number: "))
+
+result1 = sum_of_digits(num)
+result2 = check_odd_even(num)
+
+print("Sum of digits:",result1)
+print("Sum is:", result2)
+
+
+#Enter a number: 12345
+#Sum of digits: 15
+#Sum is: Odd

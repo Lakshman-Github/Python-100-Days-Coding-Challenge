@@ -1,0 +1,23 @@
+def reverse_number(num):
+    reverse = 0
+    
+    while num > 0:
+        digits = num % 10
+        reverse = reverse * 10 + digits 
+        num = num // 10
+        
+    return reverse 
+    
+def check_palindrome(num):
+    reverse = reverse_number(num)
+    
+    if num == reverse:
+        return "Palindrome"
+        
+    else:
+        return "Not a Palindrome"
+        
+num = int(input("Enter a number: "))
+
+result = check_palindrome(num)
+print(result)

@@ -1,0 +1,20 @@
+def find_largest(a,b):
+    if a > b:
+        return "Largest"
+    else:
+        return "Smallest"
+        
+def check_positive_negative(num):
+    if num >= 0:
+        return "positive"
+    else:
+        return "negative"
+        
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
+
+Largest = find_largest(num1,num2)
+Result = check_positive_negative(num1)
+
+print(Largest)
+print(Result)

@@ -1,0 +1,29 @@
+def find_common(numbers1, numbers2):
+    common = []
+    
+    for num in numbers1:
+        if num in numbers2 and num not in common:
+            common.append(num)
+            
+    return common
+    
+def count_common(numbers1, numbers2):
+    count = 0
+    
+    for num in numbers1:
+        if num in numbers2:
+            count = count+1
+            
+    return count 
+    
+numbers1 = [10,20,30,40,50]
+numbers2 = [30,40,60,70,10]
+
+common = find_common(numbers1,numbers2)
+count = count_common(numbers1,numbers2)
+
+print("Common elements:", common)
+print("Numbers of common elements:", count)
+
+
+
